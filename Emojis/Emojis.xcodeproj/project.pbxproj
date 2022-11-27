@@ -190,10 +190,10 @@
 		BE7C044D28F747D70094A24A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BE7C04A22933201E0094A24A /* Random */,
 				BE7C04942931B5F10094A24A /* Repos */,
 				BE7C04872931B05C0094A24A /* AvatarList */,
 				BE7C0471292F14530094A24A /* MainScene */,
-				BE7C045628F749F10094A24A /* RandomEmoj */,
 				BE7C044F28F7491C0094A24A /* EmojisList */,
 			);
 			name = Scenes;
@@ -252,31 +252,13 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		BE7C045628F749F10094A24A /* RandomEmoj */ = {
-			isa = PBXGroup;
-			children = (
-				BE7C045A28F74A170094A24A /* View */,
-				BE7C045928F74A120094A24A /* Service */,
-				BE7C045828F74A090094A24A /* ViewModel */,
-				BE7C045728F74A020094A24A /* Coordinator */,
-			);
-			name = RandomEmoj;
-			sourceTree = "<group>";
-		};
-		BE7C045728F74A020094A24A /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				BE7C0462292D8B960094A24A /* RandomEmojCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		BE7C045828F74A090094A24A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				BE7C048529303F170094A24A /* RandomViewModel.swift */,
 			);
 			name = ViewModel;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BE7C045928F74A120094A24A /* Service */ = {
@@ -284,6 +266,7 @@
 			children = (
 			);
 			name = Service;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BE7C045A28F74A170094A24A /* View */ = {
@@ -426,6 +409,25 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BE7C04A129331FF00094A24A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BE7C0462292D8B960094A24A /* RandomEmojCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BE7C04A22933201E0094A24A /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				BE7C045A28F74A170094A24A /* View */,
+				BE7C045928F74A120094A24A /* Service */,
+				BE7C045828F74A090094A24A /* ViewModel */,
+				BE7C04A129331FF00094A24A /* Coordinator */,
+			);
+			path = Random;
 			sourceTree = "<group>";
 		};
 		C20160DD7496E3C9F8F25DEB /* Pods */ = {
