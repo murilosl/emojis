@@ -4,21 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Emojis-EmojisUITests.xcscheme</key>
+		<key>Pods-Emoji-EmojiUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-Emojis.xcscheme</key>
+		<key>Pods-Emoji.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-EmojisTests.xcscheme</key>
+		<key>Pods-EmojiTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
