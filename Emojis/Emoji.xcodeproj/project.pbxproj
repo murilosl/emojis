@@ -38,6 +38,7 @@
 		BEDE79AD2933289900A69DBA /* EmojisListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79AC2933289900A69DBA /* EmojisListViewModel.swift */; };
 		BEDE79AF293328BC00A69DBA /* ListEmojisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79AE293328BC00A69DBA /* ListEmojisViewController.swift */; };
 		BEDE79B1293328D500A69DBA /* EmojisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79B0293328D500A69DBA /* EmojisService.swift */; };
+		BEDE79B429332A4100A69DBA /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79B329332A4100A69DBA /* ApiRequest.swift */; };
 		EBDF90A5AA13065F39BC5579 /* Pods_EmojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E400E58183AC002352287C8 /* Pods_EmojiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		BEDE79AC2933289900A69DBA /* EmojisListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisListViewModel.swift; sourceTree = "<group>"; };
 		BEDE79AE293328BC00A69DBA /* ListEmojisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEmojisViewController.swift; sourceTree = "<group>"; };
 		BEDE79B0293328D500A69DBA /* EmojisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisService.swift; sourceTree = "<group>"; };
+		BEDE79B329332A4100A69DBA /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		C855EC89D40F4D3C7FD953B6 /* Pods-EmojiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiTests.release.xcconfig"; path = "Target Support Files/Pods-EmojiTests/Pods-EmojiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6A48ADA5EE88C49BEE4D312 /* Pods_Emoji_EmojiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji_EmojiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D881A67CA0ECA8FC7EC75D01 /* Pods-Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji.debug.xcconfig"; path = "Target Support Files/Pods-Emoji/Pods-Emoji.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +143,6 @@
 				1A340D5DD19531463612E23C /* Pods-EmojiTests.debug.xcconfig */,
 				C855EC89D40F4D3C7FD953B6 /* Pods-EmojiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -445,6 +446,7 @@
 		BE7C0549293325F60094A24A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BEDE79B229332A2B00A69DBA /* Infra */,
 				BE7C054A293325FE0094A24A /* Model */,
 				BE7C054B2933261C0094A24A /* Extensions.swift */,
 				BE7C054F2933265E0094A24A /* DataStore.swift */,
@@ -460,6 +462,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BEDE79B229332A2B00A69DBA /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79B329332A4100A69DBA /* ApiRequest.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +481,7 @@
 				BE7C04F2293323AE0094A24A /* Sources */,
 				BE7C04F3293323AE0094A24A /* Frameworks */,
 				BE7C04F4293323AE0094A24A /* Resources */,
+				EE6B39498A0081A9F14CA53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,6 +519,7 @@
 				BE7C0515293323B10094A24A /* Sources */,
 				BE7C0516293323B10094A24A /* Frameworks */,
 				BE7C0517293323B10094A24A /* Resources */,
+				61CA2840028ADAFDDF0E6090 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -634,6 +646,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		61CA2840028ADAFDDF0E6090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emoji-EmojiUITests/Pods-Emoji-EmojiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emoji-EmojiUITests/Pods-Emoji-EmojiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emoji-EmojiUITests/Pods-Emoji-EmojiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B68B378FC5B233D858AE79BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,6 +683,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6B39498A0081A9F14CA53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emoji/Pods-Emoji-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emoji/Pods-Emoji-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emoji/Pods-Emoji-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -677,6 +723,7 @@
 				BE7C0556293326C50094A24A /* MainCoordinator.swift in Sources */,
 				BE7C0548293325350094A24A /* BaseCoordinator.swift in Sources */,
 				BE7C04FE293323AE0094A24A /* ViewController.swift in Sources */,
+				BEDE79B429332A4100A69DBA /* ApiRequest.swift in Sources */,
 				BEDE79A72933281000A69DBA /* AvatarListCoordinator.swift in Sources */,
 				BE7C04FA293323AE0094A24A /* AppDelegate.swift in Sources */,
 				BEDE79AB2933287300A69DBA /* ListEmojisCoordinator.swift in Sources */,
