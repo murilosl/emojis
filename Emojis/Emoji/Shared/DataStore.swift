@@ -8,21 +8,21 @@
 import Foundation
 
 protocol DataStore {
-    func getAllEmojis()->[EmojisModel]
-    func getEmoji(by id: Int)->EmojisModel?
+    func getAllEmojis()->[Emoj]
+    func getEmoji(by id: Int)->Emoj?
 }
 
 final class DataStoreImp : DataStore {
     
     private let data = [
-        EmojisModel(name: "Teste")
+        Emoj(name: "Teste")
     ]
     
-    func getAllEmojis() -> [EmojisModel] {
+    func getAllEmojis() -> [Emoj] {
         return data
     }
     
-    func getEmoji(by id: Int) -> EmojisModel? {
+    func getEmoji(by id: Int) -> Emoj? {
         return EmojisModel(name: "teste")
     }
     

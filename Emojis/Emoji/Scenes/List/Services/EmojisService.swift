@@ -8,25 +8,19 @@
 import Foundation
 
 protocol EmijisServiceProtocol {
-    func getEmijisList(response: @escaping([EmojisModel])->())
-    func getEmiji(by id: Int, response: @escaping(EmojisModel?)->())
+    func getEmijisList(completion: @escaping APIListResultParse)
 }
 
 class EmojisService : EmijisServiceProtocol {
     
-    let request = APIRequest()
+    let manager = ListManager()
         
     init(){
     }
     
-    func getEmijisList(response: @escaping ([EmojisModel]) -> ()) {
-        request.open(url: "https://api.github.com/emojis") { response in
-            print(response)
+    func getEmijisList(completion: @escaping APIListResultParse) {
+        manager.getAll { result in
+            completion(result)
         }
     }
-    
-    func getEmiji(by id: Int, response: @escaping (EmojisModel?) -> ()) {
-       
-    }
-    
 }

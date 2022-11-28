@@ -21,7 +21,6 @@
 		BE7C0548293325350094A24A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C0547293325350094A24A /* BaseCoordinator.swift */; };
 		BE7C054C2933261C0094A24A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C054B2933261C0094A24A /* Extensions.swift */; };
 		BE7C054E293326460094A24A /* EmojisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C054D293326460094A24A /* EmojisModel.swift */; };
-		BE7C05502933265E0094A24A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C054F2933265E0094A24A /* DataStore.swift */; };
 		BE7C05522933268E0094A24A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C05512933268E0094A24A /* MainViewModel.swift */; };
 		BE7C0554293326A80094A24A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C0553293326A80094A24A /* MainViewController.swift */; };
 		BE7C0556293326C50094A24A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C0555293326C50094A24A /* MainCoordinator.swift */; };
@@ -39,6 +38,18 @@
 		BEDE79AF293328BC00A69DBA /* ListEmojisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79AE293328BC00A69DBA /* ListEmojisViewController.swift */; };
 		BEDE79B1293328D500A69DBA /* EmojisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79B0293328D500A69DBA /* EmojisService.swift */; };
 		BEDE79B429332A4100A69DBA /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79B329332A4100A69DBA /* ApiRequest.swift */; };
+		BEDE79BA29354AED00A69DBA /* ListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79B929354AED00A69DBA /* ListProvider.swift */; };
+		BEDE79BC29354AFB00A69DBA /* ListBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79BB29354AFB00A69DBA /* ListBusiness.swift */; };
+		BEDE79BE29354B0B00A69DBA /* ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79BD29354B0B00A69DBA /* ListManager.swift */; };
+		BEDE79C329354BF800A69DBA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79C229354BF800A69DBA /* Constants.swift */; };
+		BEDE79C52935533C00A69DBA /* AvatarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79C42935533C00A69DBA /* AvatarService.swift */; };
+		BEDE79CA293553CD00A69DBA /* AvatarProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79C9293553CD00A69DBA /* AvatarProvider.swift */; };
+		BEDE79CC2935543800A69DBA /* AvatarBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79CB2935543800A69DBA /* AvatarBusiness.swift */; };
+		BEDE79CE2935547500A69DBA /* AvatarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79CD2935547500A69DBA /* AvatarManager.swift */; };
+		BEDE79D02935551B00A69DBA /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79CF2935551B00A69DBA /* RepoService.swift */; };
+		BEDE79D52935557E00A69DBA /* RepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D42935557E00A69DBA /* RepoProvider.swift */; };
+		BEDE79D72935558B00A69DBA /* RepoBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D62935558B00A69DBA /* RepoBusiness.swift */; };
+		BEDE79D92935559D00A69DBA /* RepoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D82935559D00A69DBA /* RepoManager.swift */; };
 		EBDF90A5AA13065F39BC5579 /* Pods_EmojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E400E58183AC002352287C8 /* Pods_EmojiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +93,6 @@
 		BE7C0547293325350094A24A /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		BE7C054B2933261C0094A24A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BE7C054D293326460094A24A /* EmojisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisModel.swift; sourceTree = "<group>"; };
-		BE7C054F2933265E0094A24A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BE7C05512933268E0094A24A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		BE7C0553293326A80094A24A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE7C0555293326C50094A24A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -100,6 +110,18 @@
 		BEDE79AE293328BC00A69DBA /* ListEmojisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEmojisViewController.swift; sourceTree = "<group>"; };
 		BEDE79B0293328D500A69DBA /* EmojisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisService.swift; sourceTree = "<group>"; };
 		BEDE79B329332A4100A69DBA /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		BEDE79B929354AED00A69DBA /* ListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProvider.swift; sourceTree = "<group>"; };
+		BEDE79BB29354AFB00A69DBA /* ListBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBusiness.swift; sourceTree = "<group>"; };
+		BEDE79BD29354B0B00A69DBA /* ListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManager.swift; sourceTree = "<group>"; };
+		BEDE79C229354BF800A69DBA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BEDE79C42935533C00A69DBA /* AvatarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarService.swift; sourceTree = "<group>"; };
+		BEDE79C9293553CD00A69DBA /* AvatarProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarProvider.swift; sourceTree = "<group>"; };
+		BEDE79CB2935543800A69DBA /* AvatarBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarBusiness.swift; sourceTree = "<group>"; };
+		BEDE79CD2935547500A69DBA /* AvatarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarManager.swift; sourceTree = "<group>"; };
+		BEDE79CF2935551B00A69DBA /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
+		BEDE79D42935557E00A69DBA /* RepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoProvider.swift; sourceTree = "<group>"; };
+		BEDE79D62935558B00A69DBA /* RepoBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBusiness.swift; sourceTree = "<group>"; };
+		BEDE79D82935559D00A69DBA /* RepoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManager.swift; sourceTree = "<group>"; };
 		C855EC89D40F4D3C7FD953B6 /* Pods-EmojiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiTests.release.xcconfig"; path = "Target Support Files/Pods-EmojiTests/Pods-EmojiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6A48ADA5EE88C49BEE4D312 /* Pods_Emoji_EmojiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji_EmojiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D881A67CA0ECA8FC7EC75D01 /* Pods-Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji.debug.xcconfig"; path = "Target Support Files/Pods-Emoji/Pods-Emoji.debug.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +328,9 @@
 		BE7C0535293324080094A24A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEDE79B729354ABB00A69DBA /* Provider */,
+				BEDE79B629354AB200A69DBA /* Business */,
+				BEDE79B529354AAB00A69DBA /* Manager */,
 				BEDE79B0293328D500A69DBA /* EmojisService.swift */,
 			);
 			path = Services;
@@ -408,6 +433,10 @@
 		BE7C05422933249C0094A24A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEDE79D32935556A00A69DBA /* Provider */,
+				BEDE79D22935555E00A69DBA /* Business */,
+				BEDE79D12935555700A69DBA /* Manager */,
+				BEDE79CF2935551B00A69DBA /* RepoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -415,6 +444,10 @@
 		BE7C0543293324A90094A24A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEDE79C8293553A300A69DBA /* Provider */,
+				BEDE79C72935539700A69DBA /* Business */,
+				BEDE79C62935539000A69DBA /* Manager */,
+				BEDE79C42935533C00A69DBA /* AvatarService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -449,7 +482,7 @@
 				BEDE79B229332A2B00A69DBA /* Infra */,
 				BE7C054A293325FE0094A24A /* Model */,
 				BE7C054B2933261C0094A24A /* Extensions.swift */,
-				BE7C054F2933265E0094A24A /* DataStore.swift */,
+				BEDE79C229354BF800A69DBA /* Constants.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -468,6 +501,78 @@
 				BEDE79B329332A4100A69DBA /* ApiRequest.swift */,
 			);
 			path = Infra;
+			sourceTree = "<group>";
+		};
+		BEDE79B529354AAB00A69DBA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79BD29354B0B00A69DBA /* ListManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEDE79B629354AB200A69DBA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79BB29354AFB00A69DBA /* ListBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		BEDE79B729354ABB00A69DBA /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79B929354AED00A69DBA /* ListProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BEDE79C62935539000A69DBA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79CD2935547500A69DBA /* AvatarManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEDE79C72935539700A69DBA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79CB2935543800A69DBA /* AvatarBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		BEDE79C8293553A300A69DBA /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79C9293553CD00A69DBA /* AvatarProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BEDE79D12935555700A69DBA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79D82935559D00A69DBA /* RepoManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEDE79D22935555E00A69DBA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79D62935558B00A69DBA /* RepoBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		BEDE79D32935556A00A69DBA /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE79D42935557E00A69DBA /* RepoProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,18 +815,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDE79A5293327F500A69DBA /* AvatarListViewModel.swift in Sources */,
+				BEDE79D92935559D00A69DBA /* RepoManager.swift in Sources */,
+				BEDE79D52935557E00A69DBA /* RepoProvider.swift in Sources */,
+				BEDE79BC29354AFB00A69DBA /* ListBusiness.swift in Sources */,
 				BEDE79AF293328BC00A69DBA /* ListEmojisViewController.swift in Sources */,
+				BEDE79C329354BF800A69DBA /* Constants.swift in Sources */,
 				BEDE79AD2933289900A69DBA /* EmojisListViewModel.swift in Sources */,
+				BEDE79CA293553CD00A69DBA /* AvatarProvider.swift in Sources */,
+				BEDE79CC2935543800A69DBA /* AvatarBusiness.swift in Sources */,
 				BE7C055E293327430094A24A /* ReposViewModel.swift in Sources */,
-				BE7C05502933265E0094A24A /* DataStore.swift in Sources */,
 				BE7C055A2933270C0094A24A /* RandomViewModel.swift in Sources */,
+				BEDE79BE29354B0B00A69DBA /* ListManager.swift in Sources */,
 				BE7C055C293327220094A24A /* RandomEmojCoordinator.swift in Sources */,
 				BEDE79B1293328D500A69DBA /* EmojisService.swift in Sources */,
 				BE7C054E293326460094A24A /* EmojisModel.swift in Sources */,
 				BE7C0558293326F20094A24A /* RandomEmojViewController.swift in Sources */,
 				BE7C054C2933261C0094A24A /* Extensions.swift in Sources */,
 				BE7C0556293326C50094A24A /* MainCoordinator.swift in Sources */,
+				BEDE79C52935533C00A69DBA /* AvatarService.swift in Sources */,
 				BE7C0548293325350094A24A /* BaseCoordinator.swift in Sources */,
+				BEDE79CE2935547500A69DBA /* AvatarManager.swift in Sources */,
+				BEDE79D02935551B00A69DBA /* RepoService.swift in Sources */,
 				BE7C04FE293323AE0094A24A /* ViewController.swift in Sources */,
 				BEDE79B429332A4100A69DBA /* ApiRequest.swift in Sources */,
 				BEDE79A72933281000A69DBA /* AvatarListCoordinator.swift in Sources */,
@@ -729,8 +843,10 @@
 				BEDE79AB2933287300A69DBA /* ListEmojisCoordinator.swift in Sources */,
 				BE7C0554293326A80094A24A /* MainViewController.swift in Sources */,
 				BEDE79A92933283A00A69DBA /* AvatarListViewController.swift in Sources */,
+				BEDE79BA29354AED00A69DBA /* ListProvider.swift in Sources */,
 				BEDE79A1293327A800A69DBA /* ReposViewController.swift in Sources */,
 				BE7C0504293323AE0094A24A /* Emoji.xcdatamodeld in Sources */,
+				BEDE79D72935558B00A69DBA /* RepoBusiness.swift in Sources */,
 				BEDE79A3293327C600A69DBA /* ReposCoordinator.swift in Sources */,
 				BE7C05522933268E0094A24A /* MainViewModel.swift in Sources */,
 			);

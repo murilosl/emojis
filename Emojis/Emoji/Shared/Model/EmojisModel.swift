@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct EmojisModel {
-    var name: String
-}
+typealias Emoj = [String: String]

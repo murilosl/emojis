@@ -8,11 +8,11 @@
 import Foundation
 
 protocol EmojisListViewModelCoordinatorDelegate {
-    func didTap(with data: EmojisModel)
+    func didTap(with data: Emoj)
 }
 
 protocol EmojisListViewModelProtocol {
-    var data : [EmojisModel]? { get }
+    var data : [Emoj]? { get }
     var service : EmojisService{ get }
     var coordinatorDelegate : EmojisListViewModelCoordinatorDelegate?{ get set }
     var title: String{ get }
@@ -31,7 +31,7 @@ protocol EmojisListViewModelProtocol {
 
 class EmojisListViewModel : EmojisListViewModelProtocol {
     
-    var data: [EmojisModel]?
+    var data: [Emoj]?
     
     var service: EmojisService
     
@@ -76,7 +76,7 @@ class EmojisListViewModel : EmojisListViewModelProtocol {
     }
     
     func getEmoji(at index: Int) -> String {
-        return self.data![index].name
+        return String()
     }
     
     
