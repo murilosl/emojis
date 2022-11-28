@@ -10,6 +10,10 @@ import Alamofire
 
 typealias APIResultCall = (Data?) -> ()
 
+struct DecodableType: Decodable {
+    let url: String
+}
+
 class APIRequest{
 
     //MARK: - Generic Request
@@ -17,11 +21,13 @@ class APIRequest{
     func open(url: String, completion: @escaping APIResultCall){
         
         AF.request(url).response { response in
-            if let dataReturn = response.value {
-                completion(dataReturn)
-            } else {
-                completion(nil)
-            }
+            
+            print(response.result)
+//            if let dataReturn = {
+//                print(dataReturn)
+//            } else {
+//                completion(nil)
+//            }
         }
     }
 }

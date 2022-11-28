@@ -13,12 +13,16 @@ protocol EmijisServiceProtocol {
 }
 
 class EmojisService : EmijisServiceProtocol {
+    
+    let request = APIRequest()
         
     init(){
     }
     
     func getEmijisList(response: @escaping ([EmojisModel]) -> ()) {
-     
+        request.open(url: "https://api.github.com/emojis") { response in
+            print(response)
+        }
     }
     
     func getEmiji(by id: Int, response: @escaping (EmojisModel?) -> ()) {
