@@ -56,6 +56,10 @@ extension MainCoordinator: MainViewModelCoordinatorDelegate {
 }
 
 extension MainCoordinator: StoryboardInitializable {
+    static func instantiateCollectionViewController() -> UICollectionViewController {
+        return UICollectionViewController()
+    }
+    
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }

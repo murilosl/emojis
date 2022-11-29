@@ -29,6 +29,10 @@ class AvatarListCoordinator: Coordinator {
 }
 
 extension AvatarListCoordinator: StoryboardInitializable {
+    static func instantiateCollectionViewController() -> UICollectionViewController {
+        return UICollectionViewController()
+    }
+    
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }
