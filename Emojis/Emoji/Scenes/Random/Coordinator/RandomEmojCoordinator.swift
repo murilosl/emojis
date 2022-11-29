@@ -26,6 +26,10 @@ class RandomEmojCoordinator: Coordinator {
 }
 
 extension RandomEmojCoordinator : StoryboardInitializable {
+    static func instantiateCollectionViewController() -> UICollectionViewController {
+        return UICollectionViewController()
+    }
+    
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }

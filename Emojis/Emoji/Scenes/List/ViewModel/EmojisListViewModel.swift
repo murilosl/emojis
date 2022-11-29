@@ -12,7 +12,7 @@ protocol EmojisListViewModelCoordinatorDelegate {
 }
 
 protocol EmojisListViewModelProtocol {
-    var data : [Emoj]? { get }
+    var data : [String : String]? { get }
     var service : EmojisService{ get }
     var coordinatorDelegate : EmojisListViewModelCoordinatorDelegate?{ get set }
     var title: String{ get }
@@ -31,7 +31,7 @@ protocol EmojisListViewModelProtocol {
 
 class EmojisListViewModel : EmojisListViewModelProtocol {
     
-    var data: [Emoj]?
+    var data: [String : String]?
     
     var service: EmojisService
     
@@ -54,12 +54,12 @@ class EmojisListViewModel : EmojisListViewModelProtocol {
     init(service: EmojisService) {
         self.service = service
         service.getEmijisList { result in
-            print(result)
+            self.data = result
         }
     }
     
     func didTapOnEmojis(of index: Int) {
-        self.coordinatorDelegate?.didTap(with: self.data![index])
+//        self.coordinatorDelegate?.didTap(with: self.data![index])
     }
     
     func heightForRow(at index: Int, of section: Int) -> Int {

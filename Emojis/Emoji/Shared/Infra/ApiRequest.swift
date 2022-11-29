@@ -22,12 +22,10 @@ class APIRequest{
         
         AF.request(url).response { response in
             
-            print(response.result)
-//            if let dataReturn = {
-//                print(dataReturn)
-//            } else {
-//                completion(nil)
-//            }
+            guard let dataReturn = response.data else {
+                return
+            }
+            completion(dataReturn)
         }
     }
 }

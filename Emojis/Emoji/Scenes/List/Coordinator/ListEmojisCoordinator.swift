@@ -18,16 +18,13 @@ class ListEmojisCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
-    
     func start() -> UIViewController {
         let listVC = ListEmojisCoordinator.instantiateViewController() as! ListEmojisViewController
         let service = EmojisService()
         let viewModel = EmojisListViewModel(service: service)
         listVC.viewModel = viewModel
         return listVC
-        
     }
-    
 }
 
 extension ListEmojisCoordinator: StoryboardInitializable {

@@ -29,6 +29,10 @@ class ReposCoordinator: Coordinator {
 }
 
 extension ReposCoordinator: StoryboardInitializable {
+    static func instantiateCollectionViewController() -> UICollectionViewController {
+        return UICollectionViewController()
+    }
+    
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }
