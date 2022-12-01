@@ -12,7 +12,9 @@ class ListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgCell: UIImageView!
     
     func setImage(image: String) {
-        imgCell?.image = downloadImage(image: image)
+        if let url = URL(string: image) {
+            imgCell?.load(url: url)
+        }
     }
     
     func downloadImage(image: String) -> UIImage {

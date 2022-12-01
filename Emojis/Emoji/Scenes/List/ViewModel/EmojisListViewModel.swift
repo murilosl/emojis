@@ -75,6 +75,13 @@ class EmojisListViewModel : EmojisListViewModelProtocol {
         
     }
     
+    func getEmijisList(completion: @escaping APIListResultParse) {
+        service.getEmijisList { result in
+            completion(result)
+        }
+    }
+    
+    
     func getEmoji(at index: Int) -> String {
         return String()
     }
