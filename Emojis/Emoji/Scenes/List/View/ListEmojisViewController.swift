@@ -11,11 +11,19 @@ import UIKit
 class ListEmojisViewController : UIViewController{
     
     var viewModel : EmojisListViewModel!
+    var emojis : Emoj!
     var myCollectionView : UICollectionView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupLayoutCollection()
+        
+        DispatchQueue.main.async {
+            self.myCollectionView?.reloadData()
+            self.myCollectionView?.collectionViewLayout.invalidateLayout()
+            self.myCollectionView?.layoutSubviews()
+        }
+       
     }
     
     func setupLayoutCollection() {
@@ -44,7 +52,10 @@ extension ListEmojisViewController : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ListCollectionViewCell
-        myCell.setImage(image: "https://github.githubassets.com/images/icons/emoji/unicode/1f18e.png?v8")
+        
+        let url_image = Array(viewModel.data!)[indexPath.section].value
+        
+        myCell.setImage(image: url_image)
         return myCell
     }
 }

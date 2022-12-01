@@ -16,7 +16,7 @@ class ListManager : ListManagerProtocol {
     
     func getAll(completion: @escaping APIListResultParse) {
         business.getAll { result in
-            if result.isEmpty {
+            if result != nil {
                 completion(result)
             } else {
                 completion([:])
