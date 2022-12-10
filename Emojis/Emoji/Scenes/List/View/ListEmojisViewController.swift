@@ -31,7 +31,7 @@ class ListEmojisViewController : UIViewController{
     }
     
     func setupLayoutCollection() {
-        
+        title = "Emojis"
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         layout.itemSize = CGSize(width: 75, height: 75)

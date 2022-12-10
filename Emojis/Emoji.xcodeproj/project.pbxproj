@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4E9630FCECD1BA8AC692C829 /* Pods_Emoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DCB7A2D6E01A46793A0E29 /* Pods_Emoji.framework */; };
 		7E6867E1581411856B08926C /* Pods_Emoji_EmojiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A48ADA5EE88C49BEE4D312 /* Pods_Emoji_EmojiUITests.framework */; };
+		9730735A29443E7100D17CE6 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730735929443E7100D17CE6 /* ReposView.swift */; };
+		9730735C294441B400D17CE6 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730735B294441B400D17CE6 /* ReposTableViewCell.swift */; };
+		9730735E2944436600D17CE6 /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730735D2944436600D17CE6 /* Repos.swift */; };
 		BE7C04FA293323AE0094A24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C04F9293323AE0094A24A /* AppDelegate.swift */; };
 		BE7C04FE293323AE0094A24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C04FD293323AE0094A24A /* ViewController.swift */; };
 		BE7C0501293323AE0094A24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7C04FF293323AE0094A24A /* Main.storyboard */; };
@@ -50,7 +53,6 @@
 		BEDE79D52935557E00A69DBA /* RepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D42935557E00A69DBA /* RepoProvider.swift */; };
 		BEDE79D72935558B00A69DBA /* RepoBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D62935558B00A69DBA /* RepoBusiness.swift */; };
 		BEDE79D92935559D00A69DBA /* RepoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79D82935559D00A69DBA /* RepoManager.swift */; };
-		BEDE79DB29359B6B00A69DBA /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79DA29359B6B00A69DBA /* ListCollectionViewController.swift */; };
 		BEDE79DD29359BA700A69DBA /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE79DC29359BA700A69DBA /* ListCollectionViewCell.swift */; };
 		EBDF90A5AA13065F39BC5579 /* Pods_EmojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E400E58183AC002352287C8 /* Pods_EmojiTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,9 @@
 		70DCB7A2D6E01A46793A0E29 /* Pods_Emoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0E5EA0D9A6BC8833C6F973 /* Pods-Emoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji.release.xcconfig"; path = "Target Support Files/Pods-Emoji/Pods-Emoji.release.xcconfig"; sourceTree = "<group>"; };
 		8C6A19894623E57622E75D3C /* Pods-Emoji-EmojiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji-EmojiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Emoji-EmojiUITests/Pods-Emoji-EmojiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9730735929443E7100D17CE6 /* ReposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
+		9730735B294441B400D17CE6 /* ReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewCell.swift; sourceTree = "<group>"; };
+		9730735D2944436600D17CE6 /* Repos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
 		B77A17C80BA72E8925871E64 /* Pods-Emoji-EmojiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji-EmojiUITests.release.xcconfig"; path = "Target Support Files/Pods-Emoji-EmojiUITests/Pods-Emoji-EmojiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE7C04F6293323AE0094A24A /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7C04F9293323AE0094A24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +129,6 @@
 		BEDE79D42935557E00A69DBA /* RepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoProvider.swift; sourceTree = "<group>"; };
 		BEDE79D62935558B00A69DBA /* RepoBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBusiness.swift; sourceTree = "<group>"; };
 		BEDE79D82935559D00A69DBA /* RepoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManager.swift; sourceTree = "<group>"; };
-		BEDE79DA29359B6B00A69DBA /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
 		BEDE79DC29359BA700A69DBA /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		C855EC89D40F4D3C7FD953B6 /* Pods-EmojiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiTests.release.xcconfig"; path = "Target Support Files/Pods-EmojiTests/Pods-EmojiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6A48ADA5EE88C49BEE4D312 /* Pods_Emoji_EmojiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji_EmojiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				BEDE79AE293328BC00A69DBA /* ListEmojisViewController.swift */,
-				BEDE79DA29359B6B00A69DBA /* ListCollectionViewController.swift */,
 				BEDE79DC29359BA700A69DBA /* ListCollectionViewCell.swift */,
 			);
 			path = View;
@@ -400,6 +403,8 @@
 			isa = PBXGroup;
 			children = (
 				BEDE79A0293327A800A69DBA /* ReposViewController.swift */,
+				9730735929443E7100D17CE6 /* ReposView.swift */,
+				9730735B294441B400D17CE6 /* ReposTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				BE7C054D293326460094A24A /* EmojisModel.swift */,
+				9730735D2944436600D17CE6 /* Repos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -812,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9730735A29443E7100D17CE6 /* ReposView.swift in Sources */,
 				BEDE79A5293327F500A69DBA /* AvatarListViewModel.swift in Sources */,
 				BEDE79D92935559D00A69DBA /* RepoManager.swift in Sources */,
 				BEDE79DD29359BA700A69DBA /* ListCollectionViewCell.swift in Sources */,
@@ -826,6 +833,7 @@
 				BE7C055A2933270C0094A24A /* RandomViewModel.swift in Sources */,
 				BEDE79BE29354B0B00A69DBA /* ListManager.swift in Sources */,
 				BE7C055C293327220094A24A /* RandomEmojCoordinator.swift in Sources */,
+				9730735E2944436600D17CE6 /* Repos.swift in Sources */,
 				BEDE79B1293328D500A69DBA /* EmojisService.swift in Sources */,
 				BE7C054E293326460094A24A /* EmojisModel.swift in Sources */,
 				BE7C0558293326F20094A24A /* RandomEmojViewController.swift in Sources */,
@@ -841,8 +849,8 @@
 				BE7C04FA293323AE0094A24A /* AppDelegate.swift in Sources */,
 				BEDE79AB2933287300A69DBA /* ListEmojisCoordinator.swift in Sources */,
 				BE7C0554293326A80094A24A /* MainViewController.swift in Sources */,
-				BEDE79DB29359B6B00A69DBA /* ListCollectionViewController.swift in Sources */,
 				BEDE79A92933283A00A69DBA /* AvatarListViewController.swift in Sources */,
+				9730735C294441B400D17CE6 /* ReposTableViewCell.swift in Sources */,
 				BEDE79BA29354AED00A69DBA /* ListProvider.swift in Sources */,
 				BEDE79A1293327A800A69DBA /* ReposViewController.swift in Sources */,
 				BE7C0504293323AE0094A24A /* Emoji.xcdatamodeld in Sources */,

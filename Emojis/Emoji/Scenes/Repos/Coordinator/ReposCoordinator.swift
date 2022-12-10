@@ -21,7 +21,8 @@ class ReposCoordinator: Coordinator {
     
     func start() -> UIViewController {
         let reposVC = ReposCoordinator.instantiateViewController() as! ReposViewController
-        let viewModel = ReposViewModel()
+        let service = RepoService()
+        let viewModel = ReposViewModel(service: service)
         reposVC.viewModel = viewModel
         return reposVC
     }
@@ -29,10 +30,6 @@ class ReposCoordinator: Coordinator {
 }
 
 extension ReposCoordinator: StoryboardInitializable {
-    static func instantiateCollectionViewController() -> UICollectionViewController {
-        return UICollectionViewController()
-    }
-    
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }

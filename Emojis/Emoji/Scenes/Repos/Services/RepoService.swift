@@ -8,14 +8,14 @@
 import Foundation
 
 protocol RepoServiceProtocol {
-    func getRepoList(completion: @escaping APIListResultParse)
+    func getRepoList(completion: @escaping APIReposResultParse)
 }
 
 class RepoService : RepoServiceProtocol{
     
     let manager = RepoManager()
     
-    func getRepoList(completion: @escaping APIListResultParse) {
+    func getRepoList(completion: @escaping APIReposResultParse) {
         manager.getAll { result in
             completion(result)
         }

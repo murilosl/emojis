@@ -20,10 +20,10 @@
                                 <rect key="frame" x="143" y="149" width="128" height="64"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="JWN-AL-i8d">
-                                <rect key="frame" x="87" y="298" width="240" height="335"/>
+                                <rect key="frame" x="87" y="298" width="240" height="254"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2S-3r-bx2">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="23.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="RANDOM EMOJ">
                                             <backgroundConfiguration key="background">
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG6-iD-pzb">
-                                        <rect key="frame" x="0.0" y="71" width="240" height="31"/>
+                                        <rect key="frame" x="0.0" y="63.5" width="240" height="23.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="EMOJIS LIST">
                                             <backgroundConfiguration key="background">
@@ -47,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-Yg-etL">
-                                        <rect key="frame" x="0.0" y="142" width="240" height="51"/>
+                                        <rect key="frame" x="0.0" y="127" width="240" height="0.0"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miI-jV-m6O">
                                                 <rect key="frame" x="0.0" y="10" width="150" height="34"/>
@@ -80,7 +80,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-cf-pbq">
-                                        <rect key="frame" x="0.0" y="233" width="240" height="31"/>
+                                        <rect key="frame" x="0.0" y="167" width="240" height="23.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="AVATARS LIST">
                                             <backgroundConfiguration key="background">
@@ -92,7 +92,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEn-ao-sz8">
-                                        <rect key="frame" x="0.0" y="304" width="240" height="31"/>
+                                        <rect key="frame" x="0.0" y="230.5" width="240" height="23.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="APPLE REPOS">
                                             <backgroundConfiguration key="background">
@@ -195,6 +195,7 @@
             <point key="canvasLocation" x="1728" y="104"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemBackgroundColor"/>
     <resources>
         <image name="Snake" width="64" height="64"/>
         <systemColor name="opaqueSeparatorColor">
@@ -202,6 +203,9 @@
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
