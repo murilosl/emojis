@@ -8,6 +8,7 @@
 import Foundation
 
 typealias APIListResultParse = ([String: String]) -> ()
+typealias APIReposResultParse = ([Repos]) -> ()
 
 protocol ListBusinessProtocol {
     func getAll(completion: @escaping APIListResultParse)

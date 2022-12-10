@@ -8,7 +8,7 @@
 import Foundation
 
 protocol RepoBusinessProtocol {
-    func getAll(completion: @escaping APIListResultParse)
+    func getAll(completion: @escaping APIReposResultParse)
 }
 
 
@@ -16,18 +16,16 @@ class RepoBusiness : RepoBusinessProtocol {
     
     let provider = RepoProvider()
     
-    func getAll(completion: @escaping APIListResultParse) {
+    func getAll(completion: @escaping APIReposResultParse) {
         provider.getAll { result in
             if result != nil {
                 do {
                     let json = JSONDecoder()
-                    let emojis = try json.decode(Emoj.self, from: result!)
-                    completion(emojis)
+                    let repos = try json.decode([Repos].self, from: result!)
+                    completion(repos)
                 } catch {
-                    completion([:])
                 }
             } else {
-                completion([:])
             }
         }
     }

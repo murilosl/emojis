@@ -7,9 +7,20 @@
 
 import Foundation
 
+protocol ReposViewModelProtocol {
+    func getRepos(completion: @escaping APIReposResultParse)
+}
 class ReposViewModel {
     
-    init() {
-        
+    var service: RepoService
+    
+    init(service: RepoService) {
+        self.service = service
+    }
+    
+    func getRepos(completion: @escaping APIReposResultParse) {
+        service.getRepoList(completion: { result in
+            completion(result)
+        })
     }
 }
