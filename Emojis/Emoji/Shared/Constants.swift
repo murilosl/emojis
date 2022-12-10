@@ -10,5 +10,5 @@ import Foundation
 struct EmojConstants {
     static let URL = "https://api.github.com/emojis"
     static let AVATAR_URL = "https://api.github.com/users/:murilosl"
-    static let REPO_URL = ""
+    static let REPO_URL = "https://api.github.com/users/apple/repos"
 }
