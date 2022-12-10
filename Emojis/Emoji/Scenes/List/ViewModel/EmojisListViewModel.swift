@@ -53,9 +53,6 @@ class EmojisListViewModel : EmojisListViewModelProtocol {
     
     init(service: EmojisService) {
         self.service = service
-        service.getEmijisList { result in
-            self.data = result
-        }
     }
     
     func didTapOnEmojis(of index: Int) {

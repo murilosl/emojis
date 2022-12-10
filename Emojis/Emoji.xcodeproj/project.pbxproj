@@ -172,6 +172,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9730735829443BB600D17CE6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		BD79D819DCCFBC425EB6C66C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +263,6 @@
 				BE7C0539293324510094A24A /* ViewModel */,
 				BE7C05382933244C0094A24A /* Coordinator */,
 				BE7C0537293324470094A24A /* View */,
-				BE7C0536293324390094A24A /* Services */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -264,7 +270,7 @@
 		BE7C052E293323CE0094A24A /* Random */ = {
 			isa = PBXGroup;
 			children = (
-				BE7C053D293324780094A24A /* Services */,
+				9730735829443BB600D17CE6 /* Services */,
 				BE7C053C293324720094A24A /* Coordinator */,
 				BE7C053B293324690094A24A /* ViewModel */,
 				BE7C053A293324630094A24A /* View */,
@@ -342,13 +348,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		BE7C0536293324390094A24A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		BE7C0537293324470094A24A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,13 +394,6 @@
 				BE7C055B293327220094A24A /* RandomEmojCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		BE7C053D293324780094A24A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		BE7C053E293324810094A24A /* View */ = {

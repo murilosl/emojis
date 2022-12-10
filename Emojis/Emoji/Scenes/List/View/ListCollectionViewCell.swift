@@ -9,27 +9,33 @@ import UIKit
 
 class ListCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imgCell: UIImageView!
+    private let imageView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    var indicator : UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.style = .large
+        return view
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(indicator)
+        addSubview(imageView)
+        setupConstraints()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func setImage(image: String) {
         if let url = URL(string: image) {
-            imgCell?.load(url: url)
+            imageView.load(url: url)
         }
-    }
-    
-    func downloadImage(image: String) -> UIImage {
-        guard let url = URL(string: image) else { return defaultImage() }
-    
-        let data = try? Data(contentsOf: url)
-        
-        if let imageData = data {
-            if let imageResult = UIImage(data: imageData) {
-                return imageResult
-            } else {
-                return defaultImage()
-            }
-        }
-        return defaultImage()
     }
     
     func defaultImage() -> UIImage {
@@ -37,5 +43,20 @@ class ListCollectionViewCell: UICollectionViewCell {
             return defaultImage
         }
         return UIImage()
+    }
+    
+    func setupConstraints() {
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+
     }
 }

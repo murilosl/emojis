@@ -16,103 +16,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snake" translatesAutoresizingMaskIntoConstraints="NO" id="HtF-N1-8NW">
-                                <rect key="frame" x="143" y="149" width="128" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snake" translatesAutoresizingMaskIntoConstraints="NO" id="HtF-N1-8NW">
+                                <rect key="frame" x="143" y="149" width="128" height="64"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2S-3r-bx2">
-                                <rect key="frame" x="70" y="321" width="274" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="RANDOM EMOJ">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="random:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbb-T2-4Bh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG6-iD-pzb">
-                                <rect key="frame" x="70" y="389" width="274" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="EMOJIS LIST">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="listEmojis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJl-7r-ukF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-cf-pbq">
-                                <rect key="frame" x="70" y="531" width="274" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="AVATARS LIST">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="avatarList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72Q-9g-adX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-b8-7p8">
-                                <rect key="frame" x="255" y="467" width="89" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="JWN-AL-i8d">
+                                <rect key="frame" x="87" y="298" width="240" height="335"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2S-3r-bx2">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RANDOM EMOJ">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="random:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbb-T2-4Bh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG6-iD-pzb">
+                                        <rect key="frame" x="0.0" y="71" width="240" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EMOJIS LIST">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="listEmojis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJl-7r-ukF"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-Yg-etL">
+                                        <rect key="frame" x="0.0" y="142" width="240" height="51"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miI-jV-m6O">
+                                                <rect key="frame" x="0.0" y="10" width="150" height="34"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="G9P-Ah-lq7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-b8-7p8">
+                                                <rect key="frame" x="160.5" y="10" width="79.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SEARCH">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wum-eK-tZ1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="miI-jV-m6O" firstAttribute="leading" secondItem="A2b-Yg-etL" secondAttribute="leading" id="0Pg-wd-ofS"/>
+                                            <constraint firstAttribute="height" constant="40" id="REG-49-Okl"/>
+                                            <constraint firstItem="jDK-b8-7p8" firstAttribute="top" secondItem="A2b-Yg-etL" secondAttribute="top" constant="10" id="TPz-75-HXR"/>
+                                            <constraint firstItem="miI-jV-m6O" firstAttribute="top" secondItem="A2b-Yg-etL" secondAttribute="top" constant="10" id="t8Z-kn-AoW"/>
+                                            <constraint firstAttribute="trailing" secondItem="jDK-b8-7p8" secondAttribute="trailing" id="ydh-EL-fuc"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-cf-pbq">
+                                        <rect key="frame" x="0.0" y="233" width="240" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="AVATARS LIST">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="avatarList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72Q-9g-adX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEn-ao-sz8">
+                                        <rect key="frame" x="0.0" y="304" width="240" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="APPLE REPOS">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AppleRepos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzo-uX-XFl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="LK0-cQ-0EJ"/>
-                                    <constraint firstAttribute="width" constant="89" id="z3C-zF-iZD"/>
+                                    <constraint firstItem="3Kd-cf-pbq" firstAttribute="leading" secondItem="JWN-AL-i8d" secondAttribute="leading" id="447-vd-kog"/>
+                                    <constraint firstAttribute="trailing" secondItem="A2b-Yg-etL" secondAttribute="trailing" id="6eH-93-uEJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="DG6-iD-pzb" secondAttribute="trailing" id="Jqn-GP-WyO"/>
+                                    <constraint firstAttribute="trailing" secondItem="rEn-ao-sz8" secondAttribute="trailing" id="KTR-fU-fNc"/>
+                                    <constraint firstItem="B2S-3r-bx2" firstAttribute="leading" secondItem="JWN-AL-i8d" secondAttribute="leading" id="TJg-Tx-SHw"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Kd-cf-pbq" secondAttribute="trailing" id="YW1-zN-Adg"/>
+                                    <constraint firstItem="A2b-Yg-etL" firstAttribute="leading" secondItem="JWN-AL-i8d" secondAttribute="leading" id="neP-kD-WNx"/>
+                                    <constraint firstItem="DG6-iD-pzb" firstAttribute="leading" secondItem="JWN-AL-i8d" secondAttribute="leading" id="ppb-eS-tZn"/>
+                                    <constraint firstAttribute="trailing" secondItem="B2S-3r-bx2" secondAttribute="trailing" id="rhp-ET-y9B"/>
+                                    <constraint firstItem="rEn-ao-sz8" firstAttribute="leading" secondItem="JWN-AL-i8d" secondAttribute="leading" id="spv-Gt-THX"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="SEARCH">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wum-eK-tZ1"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miI-jV-m6O">
-                                <rect key="frame" x="70" y="466" width="177.5" height="33"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEn-ao-sz8">
-                                <rect key="frame" x="70" y="596" width="274" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="APPLE REPOS">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="AppleRepos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzo-uX-XFl"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="jDK-b8-7p8" secondAttribute="bottom" constant="398" id="1IU-Ku-T7A"/>
-                            <constraint firstItem="miI-jV-m6O" firstAttribute="top" secondItem="DG6-iD-pzb" secondAttribute="bottom" constant="46" id="1hc-i9-xS5"/>
-                            <constraint firstItem="rEn-ao-sz8" firstAttribute="top" secondItem="3Kd-cf-pbq" secondAttribute="bottom" constant="34" id="6Mt-Mo-8R8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DG6-iD-pzb" secondAttribute="trailing" constant="50" id="9zR-Ct-gUB"/>
-                            <constraint firstItem="3Kd-cf-pbq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="GI8-jg-2vU"/>
-                            <constraint firstItem="jDK-b8-7p8" firstAttribute="leading" secondItem="miI-jV-m6O" secondAttribute="trailing" constant="7.5" id="I5k-gi-eq0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jDK-b8-7p8" secondAttribute="trailing" constant="50" id="NYk-SK-QbM"/>
-                            <constraint firstItem="rEn-ao-sz8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="PAJ-RL-fS9"/>
-                            <constraint firstItem="jDK-b8-7p8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="467" id="UBP-L5-CYK"/>
-                            <constraint firstItem="miI-jV-m6O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Y5A-Ki-qCL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Kd-cf-pbq" secondAttribute="trailing" constant="50" id="ZI1-75-Nim"/>
-                            <constraint firstItem="DG6-iD-pzb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="aL0-b7-ALN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B2S-3r-bx2" secondAttribute="trailing" constant="50" id="dig-uS-b46"/>
-                            <constraint firstItem="3Kd-cf-pbq" firstAttribute="top" secondItem="jDK-b8-7p8" secondAttribute="bottom" constant="33" id="gxE-LS-z3L"/>
-                            <constraint firstItem="B2S-3r-bx2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="kjR-iF-tKH"/>
-                            <constraint firstItem="3Kd-cf-pbq" firstAttribute="top" secondItem="miI-jV-m6O" secondAttribute="bottom" constant="32" id="kvm-eV-7ZN"/>
-                            <constraint firstItem="jDK-b8-7p8" firstAttribute="centerY" secondItem="miI-jV-m6O" secondAttribute="centerY" id="skr-oL-wvl"/>
-                            <constraint firstItem="DG6-iD-pzb" firstAttribute="top" secondItem="B2S-3r-bx2" secondAttribute="bottom" constant="37" id="tl7-IR-E6b"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rEn-ao-sz8" secondAttribute="trailing" constant="50" id="ymn-ph-jr2"/>
+                            <constraint firstItem="JWN-AL-i8d" firstAttribute="top" secondItem="HtF-N1-8NW" secondAttribute="bottom" constant="85" id="APv-L9-kpx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HtF-N1-8NW" secondAttribute="trailing" constant="143" id="EVE-wi-saN"/>
+                            <constraint firstItem="JWN-AL-i8d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="V9Z-h5-4rC"/>
+                            <constraint firstItem="HtF-N1-8NW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="pWQ-Od-nhu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JWN-AL-i8d" secondAttribute="trailing" constant="87" id="wOJ-4M-9tN"/>
+                            <constraint firstItem="HtF-N1-8NW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="yKE-6C-VWD"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -185,6 +199,9 @@
         <image name="Snake" width="64" height="64"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

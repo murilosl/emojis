@@ -55,11 +55,12 @@ extension StoryboardInitializable where Self: Coordinator {
 
 extension UIImageView {
     func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
+        DispatchQueue.main.async {
+            print(url.absoluteString)
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {
-                        self?.image = image
+                        self.image = image
                     }
                 }
             }
